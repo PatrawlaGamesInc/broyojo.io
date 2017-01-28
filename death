@@ -1,0 +1,14 @@
+// Death.
+socket.on('RIP', function () {
+global.gameStart = false;
+global.died = true;
+window.setTimeout(function() {
+document.getElementById('gameAreaWrapper').style.opacity = 0;
+document.getElementById('startMenuWrapper').style.maxHeight = '1000px';
+global.died = false;
+if (global.animLoopHandle) {
+window.cancelAnimationFrame(global.animLoopHandle);
+global.animLoopHandle = undefined;
+}
+}, 2500);
+});
