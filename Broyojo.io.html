@@ -3,66 +3,123 @@
   <head>
     <!-- Meta Properties -->
     <meta charset="UTF-8">
-    <title>Broyojo.io</title>
+    <title>Broyojo.io|Where all the fun begins!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Welcome to Broyojo.io where all the fun begins!" />
     <!-- CSS -->
     <link rel="stylesheet" href="main.css" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!-- Audio -->
-    <audio id="split_cell" src="audio/split.mp3"></audio>
-    <audio id="spawn_cell" src="audio/spawn.mp3"></audio>
-    <audio>
-      <source src=""
-	      </audio>
   </head>
-  <body>
-    <div id="gameAreaWrapper">
-      <div id="status"><span class="title">Leaderboard</span></div>
-      <div class="chatbox" id="chatbox">
-	<ul id="chat-client.js" class="chat-list"></ul>
-	<input id="chatInput" type="text" class="chat-input" placeholder="Chat here..." maxlength="35" />
-      </div>
-      <div id="mobile">
-	<input type="image" id="split" class="split" src="img/split.png" alt="splitBtn">
-	<input type="image" id="feed" class="feed" src="img/feed.png" alt="feedBtn">
-      </div>
-      <canvas tabindex="1" id="cvs"></canvas>
+  <div id="gameAreaWrapper">
+    <div id="status"><span class="title">Leaderboard</span></div>
+    <div class="chatbox" id="chatbox">
+      <ul id="chatList" class="chat-list"></ul>
+      <input id="chatInput" type="text" class="chat-input" placeholder="Chat here..." maxlength="35" />
     </div>
-    <div id="startMenuWrapper">
-      <div id="startMenu">
-	<p>Broyojo.io</p>
-	<input type="text" tabindex="0" autofocus placeholder="Enter your name here" id="playerNameInput" maxlength="25" />
-	<b class="input-error">Nick must be alphanumeric characters only dumby!</b>
-	<br />
-	<a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
-	<button id="spectateButton">Spectate</button>
-	<button id="settingsButton">Settings</button>
-	<br />
-	<div id="settings">
-          <h3>Settings</h3>
+    <div id="mobile">
+      <input type="image" id="split" class="split" src="img/split.png" alt="splitBtn">
+      <input type="image" id="feed" class="feed" src="img/feed.png" alt="feedBtn">
+    </div>
+    <canvas tabindex="1" id="cvs"></canvas>
+  </div>
+  <div id="startMenuWrapper">
+<div id="status"><span class="title">Leaderboard</span></div>
+    <div class="chatbox" id="chatbox">
+      <ul id="chatList" class="chat-list"></ul>
+      <input id="chatInput" type="text" class="chat-input" placeholder="Chat here..." maxlength="35" />
+    </div>
+    <div id="mobile">
+      <input type="image" id="split" class="split" src="img/split.png" alt="splitBtn">
+      <input type="image" id="feed" class="feed" src="img/feed.png" alt="feedBtn">
+    </div>
+    <canvas tabindex="1" id="cvs"></canvas>
+  </div>
+  <div id="startMenuWrapper">
+    <div id="startMenu">
+      <p>Welcome To Broyojo.io!</p>
+     <center><h5>Where all the fun begins!</h5></center>
+      <center>
+        <h1>(Not playable yet but will be in the future)</h1>
+      </center>
+      <input type="text" tabindex="0" autofocus placeholder="Name Yourself..." id="playerNameInput" maxlength="25" />
+      <b class="input-error">Nick must be alphanumeric characters only!</b>
+      <br />
+      <button id="startButton" onclick="window.location.href='https://broyojo.io/demo'"/>Play</button>
+      <button id="spectateButton">Spectate</button>
+      <button id="settingsButton">Settings</button>
+      <br />
+      <div id="settings">
+        <h3>Settings</h3>
+        <ul>
+          <label><input id="map" type="checkbox"checked>Show mini-map</label>
+          <br />
+          <label><input id="fps" type="checkbox" checked>Show fps</label>
+          <br />
+          <label><input id="kills" type="checkbox" checked>Show Kills</label>
+          <br />
+<label><input id="playerid" type="checkbox" checked>Show player names</label>
+        </ul>
+      </div>
+      <div id="instructions">
+        <h3>Gameplay and Controls</h3>
+        <ul>
+          <li>Movement-Use wasd to move. Space to jump</li>
+          <li>Left click to shoot</li>
+          <li>Hotbar slots are 1-4 on keyboard</li>
+          <li>Press "t" to chat</li>
+          <li>This will only be in beta mode for a while so some functions that we say might not be fully implimented.</li>
+      </div>
+      <h3>Creators</h3>
+      <ul>
+        <h1>Gerald DiPasquale and David Andrews with some help from Github and a huge thanks to Agar clone for some gameplay. You can find them <a href="http\
+s://github.com/huytd/agar.io-clone">here.</a> Also go to <a href="https://broyojo.com">broyojo.com</a> to figure out how to join our Github.</h1>
+        <br />
+        <center>
+          <button onclick="myFunction()">Download The Game</button>
           <ul>
-            <label><input id="visBord" type="checkbox">Show border</label>
-            <label><input id="showMass" type="checkbox">Show mass</label>
+<a href="https://github.com/Broyojo/broyojo.io">Visit our Github</a>
             <br />
-            <label><input id="continuity" type="checkbox">Continue moving when mouse is off-screen</label>
+            <a href="https://m.youtube.com/channel/UC_PN99YXc39pVBb3vOaWp0A">Visit Gerald's Youtube Channel</a>
             <br />
-            <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
+            <a href="https://www.youtube.com/channel/UCRloUeFQbwjH0FLq-ATQPQg">Visit Megaben2's Youtube Channel</a>
+            <br />
+            <a href="https://turd.ch">Visit Turd.ch</a>
+            <br />
+            <a href="https://broyojo.com/">Visit Broyojo.com</a>
+            <br />
+            <a href="https://www.youtube.com/channel/UCRHTsatQgScvGmMYFaEVDqw">Visit Broyojo's Youtube Channel</a>
+            <br />
+            <a href="https://broyojo.com/sdsd">Visit daw's other game</a>
+            <br />
+            <a href="https://broyojo.com/pong">Visit my daw's brick breaker game</a>
+            <br />
           </ul>
-	</div>
-	<div id="instructions">
-          <h3>Gameplay</h3>
-          <ul>
-            <li>Move your mouse on the screen to move your character.</li>
-            <li>Eat food and other players in order to grow your character (food respawns every time a player eats it).</li>
-            <li>A player's mass is the number of food particles eaten.</li>
-	    <li>There is infinite splitting.</li>
-	    <li>You can shoot viruses</li>
-            <li>Objective: Try to get on the leaderboard</li>
-	  </ul>
-	</div>
-      </div>
-    </div>
-    <!-- JS -->
-    <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="app.json"></script>
-  </body>
+        </center>
+      </ul>
+      <h3>Updates</h3>
+      <ul>
+        <li>We made the play button work and it takes you to a loading screen. We will work on making the game from there.</li>
+      </ul>
+      <!-- JS Stuff -->
+      <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+      <script src="app.js"></script>
+</body>
 </html>
